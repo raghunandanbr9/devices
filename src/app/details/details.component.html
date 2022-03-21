@@ -1,0 +1,36 @@
+<div class="search">
+    <div class="str">
+      <div class="icon"><img src="./assets/search.png" /></div>
+      <div class="inp"><input type="text" /></div>
+    </div>
+    <div class="action"><button>CANCEL</button></div>
+  </div>
+
+  <div class="details">
+    <div class="left">
+      <div class="list-header">Related Devices</div>
+
+      <div *ngFor="let device of list" class="list" (click)="goTo(device.id)">
+        <div class="icon">
+          <img src="{{ device.img }}" />
+        </div>
+        <div class="details">
+          <div class="name">{{ device.name }}</div>
+          <div class="status">Status : {{ device.status }}</div>
+        </div>
+      </div>
+    
+    </div>
+    <div class="right">
+      <div class="specs">
+        <div class="heading"> Device: {{device.name}}</div>
+        <div class="other">
+            <p> status : {{device.status}}</p>
+            <p> Temprature : {{device.temp}}</p>
+            <p> Usage: </p>
+            <img src="./assets/graph.png">
+        </div>
+      </div>
+    </div>
+  </div>
+  

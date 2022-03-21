@@ -1,0 +1,121 @@
+.details{
+  display: flex;
+  justify-content: space-around;
+  .left{
+    width: 50%;
+  }
+  .right{
+    width: 50%;
+    .specs{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      border: 1px solid;
+      margin-top: 15px;
+      .heading {
+        background-color: #cfdae1;
+        padding: 10px;
+        font-size: 2rem;
+      }
+      .other{
+        padding: 15px;
+
+      }
+    }
+  }
+}
+.list {
+    display: flex;
+    background-color: #cfdae1;
+    justify-content: space-around;
+    margin: 15px;
+    padding: 10px;
+    cursor: pointer;
+    .icon {
+      width: 10%;
+      img {
+        width: 30px;
+        padding: 10px 20px;
+      }
+    }
+    .details {
+      width: 80%;
+      flex-direction: column;
+      .name {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+      .status {
+        color: grey;
+      }
+    }
+    .info {
+      width: 10%;
+      span {
+        display: inline-block;
+        width: 24px;
+        height: 21px;
+        border-radius: 50%;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding-top: 3px;
+        margin-top: 15px;
+      }
+    }
+  }
+  .search {
+    display: flex;
+    background-color: #cfdae1;
+    justify-content: space-around;
+    margin: 15px;
+    padding: 10px;
+    .str {
+      width: 80%;
+      display: flex;
+      background-color: white;
+      justify-content: start;
+      padding: 5px;
+      .icon {
+        width: 5%;
+        text-align: right;
+        img {
+          width: 30px;
+        }
+      }
+      .inp {
+        width: 90%;
+  
+        input {
+          width: 100%;
+          height: 30px;
+          margin-left: 30px;
+          padding: 0;
+          margin: 0;
+          border: none;
+        }
+      }
+    }
+    .action {
+      text-align: center;
+      button {
+        margin-top: 10px;
+        cursor: pointer;
+        border: 0;
+        background-color: transparent;
+        color: #36a7d5;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      width: 20%;
+    }
+  }
+
+.list-header {
+  background-color: #cfdae1;
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 15px;
+}  
